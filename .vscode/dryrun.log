@@ -1,0 +1,8 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'c:/Desenvolvimento/Projetos/my-projects/ufmg/data-structures/tp1/TP'
+g++ -std=c++11 -g -Wall -c src/Cell.cpp -o obj/Cell.o -I./include/
+g++ -std=c++11 -g -Wall -c src/LinkedQueue.cpp -o obj/LinkedQueue.o -I./include/
+g++ -std=c++11 -g -Wall -c src/main.cpp -o obj/main.o -I./include/
+g++ -std=c++11 -g -Wall -o ./bin/run.out  ./obj/Cell.o  ./obj/LinkedQueue.o  ./obj/main.o
+make: Leaving directory 'c:/Desenvolvimento/Projetos/my-projects/ufmg/data-structures/tp1/TP'
+ 

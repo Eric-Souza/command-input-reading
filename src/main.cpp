@@ -2,11 +2,13 @@
 #include <iostream>
 #include <string>
 
+#include <LinkedQueue.hpp>
+
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-  // Checks if the command line file input is correct
+  // Reads file using command line
   if (argc > 1)
   {
     fstream inputTextFile(argv[1]);
@@ -15,12 +17,14 @@ int main(int argc, char *argv[])
     {
       string line = "";
 
+      // Prints line by line
       while (getline(inputTextFile, line))
       {
         cout << line << endl;
       }
     }
 
+    // Error handling
     else
     {
       cout << "Error while reading file, exiting..." << endl;
@@ -28,27 +32,11 @@ int main(int argc, char *argv[])
     }
   }
 
-  // If file can't be read by command line, reads it using fstream
+  // Error handling
   else
   {
-    fstream testTextFile;
-    testTextFile.open("../text.txt", ios::in);
-
-    if (testTextFile.is_open() && testTextFile.good())
-    {
-      string line = "";
-
-      while (getline(testTextFile, line))
-      {
-        cout << line << endl;
-      }
-    }
-
-    else
-    {
-      cout << "Error while reading file, exiting..." << endl;
-      return -1;
-    }
+    cout << "Error while executing code, please check the command again";
+    return -1;
   }
 
   return 0;
