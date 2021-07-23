@@ -5,6 +5,9 @@
     "*.tcc": "cpp",
     "iostream": "cpp",
     "iosfwd": "cpp",
-    "cstddef": "cpp"
-  }
+    "cstddef": "cpp",
+    "string": "cpp",
+    "new": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "Disabled"
 }

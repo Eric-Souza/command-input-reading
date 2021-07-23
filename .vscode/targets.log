@@ -5,9 +5,8 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Thu Jul 22 14:02:42 2021
+# Make data base, printed on Fri Jul 23 13:27:56 2021
 
 # Variables
 
@@ -28,7 +27,7 @@ USERPROFILE = C:\Users\Eric
 # environment
 LOCALAPPDATA = C:\Users\Eric\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-2ac40e19-afe7-4441-a6c4-3bdff8a6b33d-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-dbfde708-bdd0-4070-9f36-7d41f2bc598c-sock
 # environment
 VSCODE_CWD = C:\Users\Eric\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -44,7 +43,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11896_UOTCTTSTQGYZYOAC
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6364_DPXMHBMGNAOSCMWV
 # environment
 VSCODE_BROWSER_CODE_LOADING = bypassHeatCheck
 # environment
@@ -102,7 +101,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 11896
+VSCODE_PID = 6364
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # makefile (from 'Makefile', line 30)
@@ -328,7 +327,7 @@ obj/LinkedQueue.o:
 # Not a target:
 src/Cell.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2021-07-22 10:30:23
+#  Last modified 2021-07-22 14:04:34
 #  File has been updated.
 #  Successfully updated.
 
@@ -346,6 +345,6 @@ src/Cell.cpp:
 # strcache performance: lookups = 38 / hit rate = 28%
 # hash-table stats:
 # Load=27/8192=0%, Rehash=0, Collisions=0/38=0%
-# Finished Make data base on Thu Jul 22 14:02:42 2021
+# Finished Make data base on Fri Jul 23 13:27:56 2021
 
  
