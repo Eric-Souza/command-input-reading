@@ -22,11 +22,6 @@ int main(int argc, char *argv[])
       while (getline(inputTextFile, line))
       {
         cout << line << endl;
-
-        stringstream stream(line);
-
-        string command;
-        stream >> command;
       }
     }
 

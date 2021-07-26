@@ -5,13 +5,12 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Fri Jul 23 13:27:56 2021
+# Make data base, printed on Mon Jul 26 12:58:44 2021
 
 # Variables
 
-# environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -27,7 +26,8 @@ USERPROFILE = C:\Users\Eric
 # environment
 LOCALAPPDATA = C:\Users\Eric\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-dbfde708-bdd0-4070-9f36-7d41f2bc598c-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\p 
+ipe\vscode-ipc-6a34d047-c065-47f2-9964-acc017532173-sock
 # environment
 VSCODE_CWD = C:\Users\Eric\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -43,11 +43,9 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6364_DPXMHBMGNAOSCMWV
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7864_ALGAZAJDTTLHMBYH
 # environment
 VSCODE_BROWSER_CODE_LOADING = bypassHeatCheck
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -101,7 +99,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 6364
+VSCODE_PID = 7864
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # makefile (from 'Makefile', line 30)
@@ -112,6 +110,8 @@ OBJ_FOLDER = ./obj/
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
 VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\Eric\OneDrive
 # default
 MAKE_HOST := Windows32
 # environment
@@ -224,6 +224,7 @@ CXXFLAGS = -std=c++11 -g -Wall
 INCLUDE_FOLDER = ./include/
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+ 
 # environment
 PROCESSOR_REVISION = 2a07
 # makefile (from 'Makefile', line 23)
@@ -231,7 +232,7 @@ CC = g++
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
 # variable set hash-table stats:
-# Load=110/1024=11%, Rehash=0, Collisions=13/150=9%
+# Load=109/1024=11%, Rehash=0, Collisions=13/149=9%
 
 # Pattern-specific Variable Values
 
@@ -239,11 +240,11 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
 
 # Directories
 
-# src (key c:/Desenvolvimento/Projetos/my-projects/ufmg/data-structures/tp1/TP/src, mtime 1626889997): 6 files, no impossibilities.
-# . (key c:/Desenvolvimento/Projetos/my-projects/ufmg/data-structures/tp1/TP, mtime 1626885224): 11 files, no impossibilities.
-# ./src (key c:/Desenvolvimento/Projetos/my-projects/ufmg/data-structures/tp1/TP/src, mtime 1626889997): 6 files, no impossibilities.
+# src (key c:/Desenvolvimento/Projetos/my-projects/ufmg/data-structures/tp1/TP/src, mtime 1627060377): 3 files, no impossibilities.
+# . (key c:/Desenvolvimento/Projetos/my-projects/ufmg/data-structures/tp1/TP, mtime 1627060596): 9 files, no impossibilities.
+# ./src (key c:/Desenvolvimento/Projetos/my-projects/ufmg/data-structures/tp1/TP/src, mtime 1627060377): 3 files, no impossibilities.
 
-# 23 files, no impossibilities in 3 directories.
+# 15 files, no impossibilities in 3 directories.
 
 # Implicit Rules
 
@@ -254,16 +255,44 @@ obj/%.o: src/%.cpp
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
 
-# Not a target:
-obj/main.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+obj/main.o: src/main.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := obj/main.o
+# automatic
+# * := main
+# automatic
+# < := src/main.cpp
+# automatic
+# + := src/main.cpp
+# automatic
+# % := 
+# automatic
+# ^ := src/main.cpp
+# automatic
+# ? := src/main.cpp
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/16=12%
+#  recipe to execute (from 'Makefile', line 40):
+	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
 #  Last modified 2021-07-20 14:05:14
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/main.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-07-23 14:13:16
 #  File has been updated.
 #  Successfully updated.
 
@@ -274,40 +303,13 @@ clean:
 #  recipe to execute (from 'Makefile', line 46):
 	@rm -rf $(OBJ_FOLDER)* $(BIN_FOLDER)*
 
-obj/Cell.o: src/Cell.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'Cell'
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := obj/Cell.o
-# automatic
-# * := Cell
-# automatic
-# < := src/Cell.cpp
-# automatic
-# + := src/Cell.cpp
-# automatic
-# % := 
-# automatic
-# ^ := src/Cell.cpp
-# automatic
-# ? := src/Cell.cpp
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=2/16=12%
-#  recipe to execute (from 'Makefile', line 40):
-	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
-
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-all: obj/Cell.o obj/LinkedQueue.o obj/main.o
+all: obj/main.o
 #  Command line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -318,33 +320,20 @@ all: obj/Cell.o obj/LinkedQueue.o obj/main.o
 #  recipe to execute (from 'Makefile', line 43):
 	$(CC) $(CXXFLAGS) -o $(BIN_FOLDER)$(TARGET) $(OBJ)
 
-# Not a target:
-obj/LinkedQueue.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-src/Cell.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2021-07-22 14:04:34
-#  File has been updated.
-#  Successfully updated.
-
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/26=0%
+# Load=7/1024=1%, Rehash=0, Collisions=0/22=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 218 B / avg = 8 B
-# current buf: size = 8174 B / used = 218 B / count = 27 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 138 B / avg = 6 B
+# current buf: size = 8174 B / used = 138 B / count = 20 / avg = 6 B
 
-# strcache performance: lookups = 38 / hit rate = 28%
+# strcache performance: lookups = 31 / hit rate = 35%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=0/38=0%
-# Finished Make data base on Fri Jul 23 13:27:56 2021
+# Load=20/8192=0%, Rehash=0, Collisions=0/31=0%
+# Finished Make data base on Mon Jul 26 12:58:44 2021
 
  
