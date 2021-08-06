@@ -3,8 +3,6 @@
 #include <string>
 #include <sstream>
 
-#include <LinkedQueue.hpp>
-
 using namespace std;
 
 int main(int argc, char *argv[])
